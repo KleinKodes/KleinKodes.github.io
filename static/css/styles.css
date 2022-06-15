@@ -1,0 +1,41 @@
+
+:root {
+  --main: #687AC0
+}
+
+
+
+
+body{
+  background: hsla(228, 41%, 58%, 1);
+
+  background: linear-gradient(135deg, hsla(228, 41%, 58%, 1) 0%, hsla(246, 48%, 31%, 1) 100%);
+  
+  background: -moz-linear-gradient(135deg, hsla(228, 41%, 58%, 1) 0%, hsla(246, 48%, 31%, 1) 100%);
+  
+  background: -webkit-linear-gradient(135deg, hsla(228, 41%, 58%, 1) 0%, hsla(246, 48%, 31%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#687AC0", endColorstr="#322A76", GradientType=1 );
+  
+  width: 100%;
+  height: 100%;
+
+  padding: 2rem;
+}
+
+h1 {
+  color: black;
+  background-blend-mode: soft-light;
+  padding: 2rem;
+
+ 
+}
+
+div.header {
+  display: flex;
+  flex-direction: column;
+  min-width: 100rem;
+  justify-content: center;
+
+}
+
