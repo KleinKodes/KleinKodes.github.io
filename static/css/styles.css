@@ -1,0 +1,164 @@
+
+:root {
+  --main: #687AC0
+}
+
+
+
+
+
+body{
+  background: hsla(228, 41%, 58%, 1);
+
+  background: linear-gradient(135deg, hsla(228, 41%, 58%, 1) 0%, hsla(246, 48%, 31%, 1) 100%);
+  
+  background: -moz-linear-gradient(135deg, hsla(228, 41%, 58%, 1) 0%, hsla(246, 48%, 31%, 1) 100%);
+  
+  background: -webkit-linear-gradient(135deg, hsla(228, 41%, 58%, 1) 0%, hsla(246, 48%, 31%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#687AC0", endColorstr="#322A76", GradientType=1 );
+  
+  max-width: 100%;
+  margin: 0;
+  height: 100%;
+  padding: 2rem;
+}
+
+html, body.display {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  color: whitesmoke;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-blend-mode: soft-light;
+  padding: 2rem;
+
+ 
+}
+
+div.header {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2%;
+
+}
+
+img.title_img{
+  width: 5rem;
+  height: 5rem;
+  max-width: 100%;
+}
+
+my_card {
+  background: url("../assets/Klein_Kodes_Card.png") center/cover no-repeat;
+  background-color: #ccc;
+  object-fit: fill;
+  background-size: cover;
+  border: solid #123 5pt;
+  border-radius: 0.5rem;
+  background-attachment: local;
+  min-width: 10rem;
+  width: 10rem;
+  min-height: 16rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
+  place-items: center;
+  place-content: center;
+  scale: 10%;
+ 
+  padding: 40%;
+  text-align: center;
+  justify-content: center;
+*/
+padding-left: 1rem;
+padding-right: 1rem;
+padding-top: 1.6rem;
+padding-bottom: 1.6rem;
+justify-content: center;
+margin: 0rem;
+
+float: left;
+} 
+
+my_card name {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.cardWrapper {
+  overflow: hidden;
+}
+
+.cardWrapper:last-child, .cardWrapper:hover {
+    overflow: visible;
+}
+
+div.card_hand {
+  align-self: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  overflow-x: auto;
+  max-width: 100vw;
+  justify-content: center;
+}
+/* div.card_hand:first-child{
+  transform: rotate(11deg);
+}
+div.card_hand:last-child{
+  transform: rotate(-11deg);
+} */
+
+div.card_hand > div.my_card {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+img { display: block; }
+
+.display {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div#after_title{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  /* background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5); */
+  margin-bottom: 4%;
+  color:whitesmoke;
+  font-size: 1.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+@media screen and (max-width: 480px) {
+ .cardWrapper {
+    overflow: visible;
+
+  }
+
+  div.card_hand{
+    justify-content: flex-start;
+  }
+  
+  
+}
