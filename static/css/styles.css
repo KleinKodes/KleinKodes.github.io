@@ -194,8 +194,7 @@ div#after_title{
 @keyframes select_card{
 
   0%{
-   transform: translateX(100%);
-   transform: translateY(100%);
+   transform: translateY(100vh);
   }
 
   25%{
