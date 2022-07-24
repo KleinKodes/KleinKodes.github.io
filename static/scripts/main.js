@@ -34,7 +34,7 @@ function lower_card_hand(id) {
     haha.style.animationName = "select_card";
     haha.style.animationDuration = "3s";
     haha.style.animationFillMode = "forwards";
-    haha.style.animationTimingFunction = "linear";
+    haha.style.animationTimingFunction = "ease";
 
     
     
