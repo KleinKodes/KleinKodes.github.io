@@ -3,8 +3,14 @@
   --main: #687AC0
 }
 
-html{
-  background: hsla(228, 41%, 58%, 1);
+
+div.in_body{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  min-width: 100%;
+  min-height: 100%;
+  
 }
 
 
@@ -22,7 +28,7 @@ body{
   max-width: 100%;
   margin: 0;
   height: 100%;
-  padding: 2rem;
+  padding: 2rem; 
 }
 
 html, body.display {
@@ -127,18 +133,7 @@ div.card_hand:last-child{
 div.card_hand > div.my_card {
   margin-left: 10rem;
   margin-right: 10rem;
-  
-  
 }
-
-/* div.card_hand > .cardWrapper{
-  animation-name: select_card;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier();
-  position: absolute;
-
-} */
 
 img { display: block; }
 
@@ -147,22 +142,6 @@ img { display: block; }
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-div.overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  visibility: hidden;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 div#after_title{
@@ -177,6 +156,11 @@ div#after_title{
 
 }
 
+iframe{
+  padding: 2rem;
+  border: none;
+  size: 30rem;
+}
 
 @media screen and (max-width: 480px) {
  .cardWrapper {
@@ -189,36 +173,4 @@ div#after_title{
   }
   
   
-}
-
-@keyframes select_card{
-
-  0%{
-    right: 100%;
-    top: 100%;
-  }
-
-  25%{
-    transform: translateX(50%);
-  }
-
-  50%{
-    transform: translateY(-50%);
-    right: 50%
-    
-
-  }
-
-
-
-
-
-  100%{
-    top:50%;
-    right:50%;
-    box-shadow: #000;
-    transform: scale(10);
-    
-  
-  }
 }
