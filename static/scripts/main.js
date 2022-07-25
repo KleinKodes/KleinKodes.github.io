@@ -31,6 +31,7 @@ function lower_card_hand(id) {
     //haha.style.top = "50%";
     //haha.style.left = "50%";
     //haha.style.position = "absolute";
+    haha.style.transformStyle="preserve-3d"
     haha.style.animationName = "select_card";
     haha.style.animationDuration = "3s";
     haha.style.animationFillMode = "forwards";
