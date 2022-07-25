@@ -5,6 +5,8 @@
 
 html{
   background: hsla(228, 41%, 58%, 1);
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 
@@ -21,13 +23,15 @@ body{
   
   max-width: 100%;
   margin: 0;
-  height: 100%;
+  min-height: 100vh;
   padding: 2rem;
 }
 
-html, body.display {
+
+
+.display {
   margin: 0;
-  height: 100%;
+  min-height: 100vh;
   overflow: hidden;
 }
 
