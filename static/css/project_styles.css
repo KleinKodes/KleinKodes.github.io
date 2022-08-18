@@ -29,6 +29,10 @@ body{
   margin: 0;
   height: 100%;
   padding: 2rem; 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  
 }
 
 html, body.display {
@@ -160,6 +164,18 @@ iframe{
   padding: 2rem;
   border: none;
   size: 30rem;
+}
+
+a, a::after {
+  color: whitesmoke;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-blend-mode: soft-light;
+
+
+}
+
+a:hover, .cardWrapper:hover > a {
+  color: mediumseagreen;
 }
 
 @media screen and (max-width: 480px) {
