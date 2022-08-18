@@ -7,6 +7,7 @@ html{
   background: hsla(228, 41%, 58%, 1);
   min-height: 100vh;
   min-width: 100vw;
+  overflow-x: hidden;
 }
 
 
@@ -25,6 +26,9 @@ body{
   margin: 0;
   min-height: 100vh;
   padding: 2rem;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 
@@ -33,6 +37,18 @@ body{
   margin: 0;
   min-height: 100vh;
   overflow: hidden;
+}
+
+a, a::after {
+  color: whitesmoke;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-blend-mode: soft-light;
+
+
+}
+
+a:hover, .cardWrapper:hover > a {
+  color: mediumseagreen;
 }
 
 h1 {
@@ -55,6 +71,13 @@ div.header {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2%;
 
+}
+
+div.row_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 img.title_img{
@@ -125,6 +148,7 @@ my_card name, my_card_back name {
 
 .cardWrapper:last-child, .cardWrapper:hover {
     overflow: visible;
+    
 }
 
 div.card_hand {
