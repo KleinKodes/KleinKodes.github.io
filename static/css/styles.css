@@ -10,6 +10,13 @@ html{
   overflow-x: hidden;
 }
 
+html.hide_overflow{
+  background: hsla(228, 41%, 58%, 1);
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
 body{
   background: hsla(228, 41%, 58%, 1);
