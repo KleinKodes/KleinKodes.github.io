@@ -4,7 +4,7 @@ function delay(URL, id, target = "_self") {
     lower_card_hand(id);
     setTimeout(function () {
         var winref = window.open(URL, target); if (target != "_self" && screen.width > 480) location.reload();
-        if (target != "_self" && screen.width <= 480) { location.reload(); winref.location = URL }
+        if (target != "_self" && screen.width <= 480) { winref.location = URL; location.reload(); }
     }, 3500);
     console.log("here");
 
