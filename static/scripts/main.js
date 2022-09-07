@@ -5,8 +5,8 @@ function delay(URL, id, target = "_self") {
     //if (window.screen.width <= 480) target = "_self";
     setTimeout(function () {
         var winref = window.open(URL, target); if (target != "_self" && screen.width > 480) location.reload();
-        if (target != "_self" && screen.width <= 480) { winref.location = URL; location.reload(); }
-        if (winref.location = !URL) winref = window.open(URL, "_self");
+        else if (target != "_self" && screen.width <= 480) { winref.location = URL; location.reload(); }
+        else if (winref.location = !URL) winref = window.open(URL, "_self");
     }, 3500);
     console.log("here");
 
