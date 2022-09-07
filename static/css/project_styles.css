@@ -157,13 +157,15 @@ div#after_title{
   color:whitesmoke;
   font-size: 1.2rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  flex-direction: column;
 
 }
 
 iframe{
   padding: 2rem;
   border: none;
-  size: 30rem;
+  min-height: 20rem;
 }
 
 a, a::after {
