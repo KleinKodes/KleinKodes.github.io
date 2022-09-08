@@ -1,12 +1,14 @@
 function delay(URL, id, target = "_self") {
     if (target != "_self") target = "_blank";
     console.log(id);
+    console.log("Way Before start" + URL);
     lower_card_hand(id);
-    //if (window.screen.width <= 480) target = "_self";
+    if (window.screen.width <= 480) target = "_self";
     setTimeout(function () {
-        var winref = window.open(URL, target); if (target != "_self" && screen.width > 480) location.reload();
-        else if (target != "_self" && screen.width <= 480) { winref.location = URL; location.reload(); }
-        else if (winref.location = !URL) winref = window.open(URL, "_self");
+        console.log("Before start", URL);
+        var winref = window.open(URL, target); if (target != "_self" && screen.width > 480) { console.log("hmm batman"); location.reload(); }
+        // else if (target != "_self" && screen.width <= 480) { winref.location = URL; console.log(URL); location.reload(); }
+        // else if (window.location = !URL) { console.log("Option 3 with URL: " + URL); winref = window.open(URL, "_self"); }
     }, 3500);
     console.log("here");
 
